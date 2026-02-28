@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Phone, Mail, Github, Linkedin } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
-const roles = ["IT Graduate", "Java Developer", "Software Developer"];
+const roles = ["Software Developer", "Java Developer", "Python Developer", "Web Developer"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -66,8 +66,8 @@ const HeroSection = () => {
               <a href="#projects" className="px-6 py-3 rounded-lg gradient-bg text-primary-foreground font-medium glow-button">
                 View Projects
               </a>
-              <a href="/resume" target="_blank" className="px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                View Resume
+              <a href="/resume.pdf" download="Jai_Surya_D_Resume.pdf" className="px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                Download Resume
               </a>
               <a href="#contact" className="px-6 py-3 rounded-lg bg-muted text-foreground font-medium hover:bg-muted/80 transition-all duration-300">
                 Contact Me
